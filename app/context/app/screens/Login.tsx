@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, TextInput, Button } from "react-native";
+import { View, Image, StyleSheet, TextInput, Button } from "react-native";
 import React, { useState } from "react";
 import { useAuth } from "../../AuthContext";
 
@@ -26,6 +26,12 @@ const Login = () => {
   return (
     <View style={styles.container}>
       <View style={styles.form}>
+        <Image
+          source={{
+            uri: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/GNOME_Todo_icon_2019.svg/2048px-GNOME_Todo_icon_2019.svg.png",
+          }}
+          style={styles.image}
+        />
         <TextInput
           style={styles.input}
           placeholder="Username"
@@ -52,9 +58,10 @@ const Login = () => {
 
 const styles = StyleSheet.create({
   image: {
-    width: "50%",
+    width: "100%",
     height: "50%",
     resizeMode: "contain",
+    alignContent: "center",
   },
   form: {
     gap: 10,
