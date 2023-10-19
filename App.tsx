@@ -3,8 +3,10 @@ import { Button, StyleSheet, Text, View } from "react-native";
 import { AuthProvider, useAuth } from "./app/context/AuthContext";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Home from "./app/context/app/screens/Home";
-import Login from "./app/context/app/screens/Login";
+import Home from "./app/screens/Home";
+import Login from "./app/screens/Login";
+
+export const API_URL = "http://192.168.1.106:3000";
 
 const Stack = createNativeStackNavigator();
 export default function App() {

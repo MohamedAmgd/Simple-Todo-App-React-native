@@ -1,6 +1,6 @@
 import { View, Image, StyleSheet, TextInput, Button } from "react-native";
 import React, { useState } from "react";
-import { useAuth } from "../../AuthContext";
+import { useAuth } from "../context/AuthContext";
 
 const Login = () => {
   const [username, setUsername] = useState("");

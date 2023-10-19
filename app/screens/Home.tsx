@@ -12,8 +12,8 @@ import {
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { API_URL } from "../../AuthContext";
-import Todo from "../../../../components/Todo";
+import Todo from "../../components/Todo";
+import { API_URL } from "../../App";
 
 const Home = () => {
   const [newTodo, setNewTodo] = useState("");
