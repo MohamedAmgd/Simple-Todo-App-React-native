@@ -1,7 +1,7 @@
 import axios from "axios";
 import { createContext, useContext, useEffect, useState } from "react";
 import * as SecureStore from "expo-secure-store";
-import { API_URL } from "../../App";
+import { API_URL } from "../../constants";
 
 interface AuthProps {
   authState?: { token: string | null; authenticated: boolean | null };

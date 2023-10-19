@@ -13,7 +13,7 @@ import {
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Todo from "../../components/Todo";
-import { API_URL } from "../../App";
+import { API_URL } from "../../constants";
 
 const Home = () => {
   const [newTodo, setNewTodo] = useState("");
