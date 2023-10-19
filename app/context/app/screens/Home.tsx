@@ -30,7 +30,7 @@ const Home = () => {
 
   const createTodo = async (title: string) => {
     try {
-      await axios.post(`${API_URL}/todo`, { title, content: "" });
+      await axios.post(`${API_URL}/todo`, { title });
       refreshTodosList();
     } catch (err) {
       return { error: true, message: (err as any).response.data.message };
